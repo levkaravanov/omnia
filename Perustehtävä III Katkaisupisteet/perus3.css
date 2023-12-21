@@ -1,0 +1,147 @@
+* {
+	max-width: 100%;
+	box-sizing: border-box;
+}
+
+#sailio {
+    max-width: 1200px;
+    margin: auto;
+    padding: auto;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li a {
+	display:block;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+	text-decoration: none;
+	color: #ffffff;
+    background-color: #808080;
+    text-align: center;
+}
+
+header {
+    background-color: #d3d3d3;
+    margin: 0;
+    padding: 20px;
+}
+
+header h1 {
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+header h2 {
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+#otsikko {
+    text-align: center;
+    padding: 10px;
+    border-bottom: 1px dashed #000;
+}
+
+#uutispalkki {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#uutispalkki h1 {
+    background-color: #a9a9a9;
+    color: #ffffff;
+    padding: 10px;
+    margin: 0;
+    width: 100%;
+}
+
+#uutispalkki section {
+    background-color: #d3d3d3;
+    padding-left: 10px;
+}
+
+@media screen and (min-width: 600px) {
+
+    nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul li {
+        flex: 1;
+    }
+
+    nav li a {
+        margin-bottom: 0;
+    }
+
+    article {
+        float: left;
+        max-width: 50%;
+        background-color: #ffffff;
+        padding-right: 2%;
+    }
+
+    main {
+        overflow: hidden;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    nav ul {
+        float: right;
+        margin: 0 0 10px 0;
+
+    }
+    nav ul li a {
+        background-color: #808080;
+        padding: 10px;
+        margin-left: 10px;
+    }
+
+    header {
+        clear: both;
+        background-color: #d3d3d3;
+        overflow: hidden;
+        ma
+    }
+
+    #otsikko {
+        float: left;
+        border: none;
+        padding-right: 50px;
+        width: 50%;
+        text-align: right;
+    }
+
+    #kuvaus {
+        float: left;
+        max-width: 50%;
+
+    }
+
+    main {
+        float: left;
+        max-width: 69%;
+    }
+
+    #uutispalkki {
+        margin-top: 10px;
+        float: right;
+        max-width: 30%;
+    }
+
+    section {
+        padding-right: 10px;
+    }
+
+
+
+}
